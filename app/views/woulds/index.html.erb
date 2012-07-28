@@ -1,0 +1,52 @@
+<style>
+#header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: yellow;
+	text-align: center;
+}
+
+#mainContent {
+	padding-top: 75px;
+}
+</style>
+
+
+<html>
+<body>
+<div id="header">
+<h1><%= link_to 'What Would You Do If You Were 5 Again?', new_would_path %></h1>
+</div>
+
+<div id="mainContent">
+<table>
+  <tr>
+    <!-- <th>Question</th> -->
+    <!-- <th>Answer</th> -->
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<ol>
+<% @woulds.each do |would| %>
+	<%= would.question %>
+	<li><%= would.answer %></li>
+    <!-- <td><%#= link_to 'Show', would %></td>
+    <td><%#= link_to 'Edit', edit_would_path(would) %></td> -->
+    <!-- <td><%#= link_to 'Destroy', would, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+<% end %>
+</ol>
+</table>
+</div>
+
+
+<br />
+<div id="footer" style="margin-top: 50px;" class="clearfix">
+					This has been an Under 5'1" production.
+				</div>
+</body>
+</html>
+
+<%#= link_to 'Post Your Answer', new_would_path %>
