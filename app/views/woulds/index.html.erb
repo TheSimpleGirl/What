@@ -18,9 +18,7 @@
 <% @woulds.each do |would| %>
 	<%= would.question %>
 	<li><a href = "/woulds/new"> <%= would.answer %></a></li>
-    <!-- <td><%#= link_to 'Show', would %></td>
-    <td><%#= link_to 'Edit', edit_would_path(would) %></td> -->
-    <!-- <td><%#= link_to 'Destroy', would, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+   
 <% end %>
 </ol>
 <!-- </table> -->
@@ -33,5 +31,3 @@
 				</div>
 </body>
 </html>
-
-<%#= link_to 'Post Your Answer', new_would_path %>

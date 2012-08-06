@@ -2,7 +2,7 @@ class WouldsController < ApplicationController
   # GET /woulds
   # GET /woulds.json
   def index
-    @woulds = Would.all
+    @woulds = Would.all.reverse
 
     
     respond_to do |format|
